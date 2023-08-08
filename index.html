@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> LOST _ acates media </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<!--     <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+    <script src='main.js'></script> -->
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'> -->
+</head>
+<body> 
+    <div class="wrapper">
+      <img  class="img1" src="lost-left.png">
+      <img  class="img2" src="lost-right.png">
+      <div class="reveal">
+   
+
+      </div>
+      <div class="placeholder"></div>
+     
+    </div>
+
+
+    <div class="img-wrap">
+
+
+          <div class="img-each">
+
+      </div>
+
+  </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</body>
+</html>
+
+<style>
+
+body {
+  background-color: #3d430d;
+}
+
+.wrapper {
+  display: flex;
+  transform: scale(.8);
+  transition: 0.4s ease;
+  background-color: #000;
+  cursor: pointer;
+  backface-visibility: hidden;
+  /*   transition: 1s linear; */
+  animation: zoom-in-out 2s forwards;
+
+}
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.11, 1.11);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.img1 {
+  z-index: 3;
+}
+
+.wrapper img {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  transition: all 1s linear;
+  backface-visibility: hidden;
+    transform: scale(1.1);
+}
+
+.wrapper div {
+  transition: all 1s linear;
+}
+
+.wrapper img:nth-of-type(2) {
+  position: absolute;
+  /* right: -0.2%; */
+  z-index: 3;
+}
+
+.rt-click {
+  /*   left: -20% !important; */
+  background-color: #000;
+  transform: translateX(calc(-20%)) !important;
+}
+
+.rb-click {
+  /* left: 20% !important; */
+  top: .2%;
+  transform: translateX(calc(20%)) !important;
+}
+
+.reveal {
+  width: 1000vw;
+  margin: 0 auto;
+  font-size: 3vw;
+  position: relative;
+  margin-top: 40vw;
+/*     right: 65vw; */
+right: 67vw;
+  cursor: pointer;
+  z-index: 3;
+
+}
+
+.reveal img {
+/*   opacity: 0; */
+    /* list-style-type: none; */
+    /* text-transform: uppercase; */
+    /* width: 100%; */
+    /* position: absolute; */
+    width: 100%;
+    width: 18vw;
+
+    transform: none !important;
+/*     animation: float 6s ease-in-out infinite; */
+}
+
+.reveal img:hover {
+  transform: scale(1.1);
+}
+
+.showImg {
+  opacity: 1 !important;
+  transition: all 1s ease;
+}
+
+/* .drop {
+  margin-top: 40vw;
+} */
+.block {
+  display: block;
+}
+
+.placeholder {
+  position: absolute;
+  width: 30vw;
+  right: 0;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: all 1s linear !important;
+
+}
+
+.blk-tri {
+  transition: all 1s linear !important;
+  background-color: #000;
+  right: -19.8%;
+  /*     top: .1%;
+    bottom: -.2%; */
+  z-index: 2;
+}
+
+.img-each img {
+  width: 5%;
+  position: absolute;
+  cursor: pointer;
+  transition: 1.6s ease-in-out;
+  /* animation: float 6s ease-in-out infinite; */
+  overflow: hidden;
+}
+
+/* dharma logos  */
+.lost-12, .lost-13, .lost-14,.lost-15, .lost-16, .lost-17, .lost-18, .lost-19, .lost-20, .lost-21, .lost-22, .lost-23 {
+  width: 3.7% !important;
+}
+/* image positioning */
+
+/* up */
+
+.lost-1 {
+  top: 80%;
+  left: 30%;
+  width: 5.5% !important;
+}
+
+.lost-2 {
+  top: 100%;
+  left: 0;
+}
+
+.lost-7 {
+  top: 110%;
+  left: 70%;
+}
+
+.lost-11 {
+  top: 90%;
+  left: 90%;
+}
+
+/* down */
+
+.lost-3 {
+  top: -32%;
+  left: 50%;
+  width: 4% !important;
+}
+
+.lost-4 {
+  top: -12%;
+  left: 81%;
+  width: 2vw !important;
+}
+
+.lost-15 {
+  top: -55%;
+  left: 10%;
+}
+
+.lost-16 {
+  top: -12%;
+  left: 60%;
+}
+
+.lost-17 {
+  top: -52%;
+  left: 90%;
+}
+
+/* left */
+
+.lost-6 {
+  top: 130%;
+  left: -73%;
+  width: 2.5% !important;
+}
+
+.lost-8 {
+  top: 108%;
+  left: -48%;
+  width: 3% !important;
+}
+
+.lost-12 {
+  top: 100%;
+  left: -32%;
+  z-index: 1;
+}
+
+.lost-13 {
+  top: 75%;
+  left: -42%;
+}
+
+.lost-20 {
+  top: 84%;
+  right: 62%;
+}
+
+.lost-21 {
+  top: 110%;
+  left: -10%;
+}
+
+.lost-22 {
+  top: 34%;
+  left: -10%;
+
+}
+
+/* right */
+
+
+.lost-5 {
+  top: 38%;
+  left: 8%;
+ width: 4% !important;
+ transform: rotate(360deg);
+}
+
+.lost-9 {
+  top: 80%;
+  left: -12%;
+  width: 8% !important;
+}
+
+.lost-10 {
+  top: 35%;
+  left: 60%;
+}
+
+.lost-14 {
+  top: 50%;
+  left: 50%;
+}
+
+.lost-18 {
+  top: 65%;
+  left: 81%;
+}
+
+.lost-19 {
+  top: 62%;
+    left: -55%;
+}
+
+
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.plane-before {
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in 0.64s;
+  display: flex;
+  margin: -5vw 0 0 0;
+  margin-bottom: 5vw;
+
+}
+
+.plane-before div {
+/*   font-family: 'Helvetica', "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff; */
+  opacity: 0;
+  animation: animate-up 1s cubic-bezier(0.26, 0.54, 0.32, 1) 0.7s forwards
+}
+
+  /*  subtitle text */
+  @keyframes animate-up {
+  from {
+    opacity: 1;
+    transform: translateY(120%)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}
+
+
+.y,
+.y-rev {
+  position: absolute;
+  top: -20%;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* .x {
+  animation: x 24s linear 1 forwards;
+}
+
+.x-rev {
+  animation: x 24s linear 1 reverse;
+}
+
+.y {
+  animation: y 24s linear 1 forwards;
+}
+
+.y-rev {
+  animation: y 24s linear 1 reverse;
+} */
+
+.up {
+
+  animation: up 20s linear 1 forwards;
+}
+
+.down {
+
+  animation: down 20s linear 1 alternate;
+}
+
+.wavy-right {
+  position: absolute;
+  animation: walk-cycle 0.1s infinite steps(6), move 20s forwards linear;
+}
+
+.wavy-left {
+  position: absolute;
+  animation: walk-cycle 0.1s infinite steps(6), move 20s reverse linear;
+}
+
+
+.up:hover, .down:hover, .wavy-right:hover, .wavy-left:hover {
+animation-play-state: paused;
+}
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - 100px));
+
+  }
+}
+
+@keyframes y {
+
+  100% {
+    transform: translateY(calc(50vh - 100px));
+  }
+}
+
+@keyframes up {
+  100% {
+
+    transform: translateY(-200vh);
+  }
+}
+
+@keyframes down {
+
+  100% {
+
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes walk-cycle {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -450px 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-10vw, 10vh);
+  }
+
+  10% {
+    transform: translate(0vw, 15vh);
+  }
+
+  20% {
+    transform: translate(10vw, 20vh);
+  }
+
+  30% {
+    transform: translate(20vw, 15vh);
+  }
+
+  40% {
+    transform: translate(30vw, 10vh);
+  }
+
+  50% {
+    transform: translate(40vw, 5vh);
+  }
+
+  60% {
+    transform: translate(50vw, 0vh);
+  }
+
+  70% {
+    transform: translate(65vw, 5vh);
+  }
+
+  80% {
+    transform: translate(80vw, 10vh);
+  }
+
+  90% {
+    transform: translate(95vw, 15vh);
+  }
+
+  100% {
+    transform: translate(110vw, 20vh);
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .reveal img {
+ /*    width: 18.393vw; */
+ width: 20vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .lost-4 {
+    width: 3%  !important;
+}
+   
+   .img-each img:not(.lost-4) {
+    width: 10% !important;
+
+}
+
+}
+
+.hide {
+  display: none;
+}
+
+img[src*="108/lost-3.gif"] {
+    width: 16vw;
+    animation: float 6s ease-in-out infinite;
+}
+</style>
+
+<script>
+   var timeOut;
+  $('.img-wrap').show();
+  function tO() {
+  timeOut = setTimeout(function() {
+    $('.img-each div').fadeOut(3000);
+  }, 19000); 
+} 
+tO();
+function resetTO() {
+  clearTimeout(timeOut);
+}
+var numbr = 0;
+$('.wrapper').click(function() {
+
+  console.log(numbr);
+  $('.placeholder').slideDown().toggleClass('blk-tri');
+  $('.img1').toggleClass('rt-click');
+  $('.img2').toggleClass('rb-click');
+  $('.reveal img').toggleClass('showImg');
+  $('.reveal').html('<img class="plane" src="">');
+  //$('.reveal').toggleClass('drop');
+  $('.img-wrap').toggleClass('hide');
+  $('.img-each div').show();
+
+
+if ($('img').hasClass('rb-click')) {
+  numbr++;
+
+  if(numbr > 3) {
+    numbr = 1;
+  }
+  
+  setTimeout(function() {
+    $('.reveal img').attr('src', '108/lost-'+ numbr +'.gif');
+  }, 1000);  
+        resetTO();
+    } else  {
+     // $('.reveal img').attr('src', 'lost-imgs/lost-img-1.png/');
+     $('.reveal').html('');
+      tO();
+    }
+}); // wrapper click
+
+
+var number = 0;
+
+for (var i = 0; i < 22; i++) {
+  number++;
+  console.log(number);
+  /*  $('<img src="lost-imgs/lost-img-' + number + '.png" class="img-all lost-' + number + '"alt="lost-img" draggable="false" />').delay(1000).appendTo(".img-each").hide(); */
+  $('<div class="animation-wrap"><img src="lost-imgs/lost-img-' + number + '.png" class="img-all lost-' + number + '"alt="lost-img" draggable="false" /></div>').delay(1000).appendTo(".img-each").hide();
+}
+$(function() {
+ $('.animation-wrap').hide().delay(700).fadeIn(500);
+});
+
+$('.animation-wrap').delay(1500).show();
+
+$('.img-all').each(function(index) {
+  $('.lost-' + number).delay(100 * index).fadeIn(20 * index);
+  //$('img').delay(20 * index);
+});
+
+$('.animation-wrap').each(function(index) {
+
+  // $('.lost-3').delay(1500).animate({left: '-10%', top: '85%'});
+  //  $(this).animate({left: '100%'});
+  // $('.lost-3').animate({left: '110%', top: '10%'});
+  /*  */
+  $('.lost-1, .lost-2, .lost-7, .lost-11').addClass('up');
+ $('.lost-3, .lost-4, .lost-15, .lost-16, .lost-17').addClass('down');
+/*   $('.lost-16').parent('.animation-wrap').addClass('y');
+  $('.lost-16').addClass('x');
+  $('.lost-7').parent('.animation-wrap').addClass('y-rev');
+  $('.lost-7').addClass('x-rev'); */
+
+ $('.lost-6, .lost-8, .lost-12, .lost-13, .lost-20, .lost-21, .lost-22').addClass('wavy-left');
+ $('.lost-5, .lost-9, .lost-10, .lost-14, .lost-18, .lost-19').addClass('wavy-right');
+
+
+});
+
+
+
+
+//$(".lost-6").animate({left: '16%'}, 1500).stop();
+//$(".lost-11").animate({top: '34%'}, 1500).stop();
+//$(".lost-11").animate({top: '3%'}, 2500);
+//$(".lost-12").animate({top: '20%'}, 1500);
+//$(".lost-12").animate({left: '-10%'}, 2500);
+//$(".lost-19").animate({left: '58%'});
+//$(".lost-16").animate({left: '85%'});
+
+</script>
